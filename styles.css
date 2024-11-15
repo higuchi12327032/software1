@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  transition: background-color 0.5s;
+}
+header,
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  transition: background-color 0.5s;
+}
+main {
+  padding: 1em;
+}
+h1 {
+  color: #4caf50; /* 色味を追加 */
+  transition: color 0.5s; /* アニメーションを追加 */
+}
+#search {
+  margin-bottom: 2em;
+  transition: all 0.5s; /* アニメーションを追加 */
+}
+#search-bar {
+  width: 80%;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  border: 2px solid #4caf50; /* 色味を追加 */
+  transition: all 0.5s; /* アニメーションを追加 */
+}
+#search-bar:focus {
+  border-color: #009688; /* フォーカス時の色味を追加 */
+  transition: border-color 0.5s; /* アニメーションを追加 */
+}
+button {
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #4caf50; /* 色味を追加 */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.2s; /* アニメーションを追加 */
+}
+button:hover {
+  background-color: #45a049; /* ホバー時の色味を追加 */
+  transform: scale(1.05); /* ホバー時のアニメーションを追加 */
+}
+#event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  transition: all 0.5s; /* アニメーションを追加 */
+}
+.event {
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1 1 calc(33.333% - 1em); /* 幅を調整 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s; /* アニメーションを追加 */
+}
+.event:hover {
+  transform: scale(1.02); /* ホバー時のアニメーションを追加 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ホバー時の影を追加 */
+}
+#register {
+  margin-top: 2em;
+  background-color: #f1f1f1; /* 色味を追加 */
+  padding: 1em;
+  border-radius: 5px;
+  transition: all 0.5s; /* アニメーションを追加 */
+}
+#register input {
+  width: 80%;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  border: 2px solid #4caf50; /* 色味を追加 */
+  transition: border-color 0.5s; /* アニメーションを追加 */
+}
+#register input:focus {
+  border-color: #009688; /* フォーカス時の色味を追加 */
+  transition: border-color 0.5s; /* アニメーションを追加 */
+}
+#register button {
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #4caf50; /* 色味を追加 */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.2s; /* アニメーションを追加 */
+}
+#register button:hover {
+  background-color: #45a049; /* ホバー時の色味を追加 */
+  transform: scale(1.05); /* ホバー時のアニメーションを追加 */
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>イベント参加アプリ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 onclick="goHome()" style="cursor: pointer">地元イベント参加アプリ</h1>
+      <h2 class="subtitle">
+        地域社会と繋がろう、楽しいイベントが待っています！
+      </h2>
+    </header>
+    <main>
+      <section id="search">
+        <h2>イベントを検索</h2>
+        <input type="text" id="search-bar" placeholder="イベントを検索" />
+        <button onclick="searchEvent()">検索</button>
+      </section>
+      <section id="events">
+        <h2>イベント一覧</h2>
+        <div id="event-list"></div>
+      </section>
+      <section id="register" style="display: none">
+        <h2>イベントに申し込む</h2>
+        <form id="register-form" onsubmit="submitForm(event)">
+          <input
+            type="email"
+            id="email"
+            placeholder="メールアドレスを入力"
+            required
+          />
+          <button type="submit">申し込む</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 地元イベント参加アプリ</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
